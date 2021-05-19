@@ -1,6 +1,6 @@
 {
   "name": "aws-mqtt",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "AWS IoT MQTT broker client",
   "keywords": [
     "aws",
@@ -20,12 +20,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kmamykin/aws-mqtt.git"
+    "url": "https://github.com/OverviewCorporation/aws-mqtt.git"
   },
   "scripts": {
     "compile": "rm -rf lib && babel -d lib src",
     "watch": "babel --watch -d lib src",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles",
+    "prepare": "npm run compile"
   },
   "devDependencies": {
     "aws-sdk": "^2.0.0",
@@ -37,11 +38,11 @@
     "prettier": "1.14.0",
     "puppeteer": "^1.6.2",
     "webpack": "^4.16.5",
-    "ws": "^6.0.0"
+    "ws": "^7.4.5"
   },
   "dependencies": {
     "aws-signature-v4": "1.2.1",
-    "mqtt": "2.18.2"
+    "mqtt": "4.2.6"
   },
   "peerDependencies": {}
 }
